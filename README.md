@@ -17,4 +17,4 @@ Twitter keys: https://www.youtube.com/watch?v=PqqXjwoDQiY
 
 twitch bot account oauth: https://twitchapps.com/tmi/
 
-all of these worked for me and are great resources, but it is up to you...
+all of these worked for me and are great resources.
