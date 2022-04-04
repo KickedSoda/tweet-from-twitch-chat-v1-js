@@ -93,7 +93,7 @@ function delLastTweet(channel, tags){
 }
 
 function blackList(channel, tags, message){
-    const regexp = /*put blacklisted terms separated by |*// /;
+    const regexp = /*put blacklisted terms in lower case separated by |*// /;
     if(regexp.test(message)){
         client.say(channel, `@${tags.username}, A term you tweeted was blacklisted!`);
         client.timeout(channel, `@${tags.username}`, 300, 'Tried tweeting a blacklisted term!');
