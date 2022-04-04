@@ -40,28 +40,28 @@ client.on('message', (channel, tags, message, self) => {
         case ('!tweet'):
             tweet(channel, tags, post);
             break;
-        case('!deltweet'):
+        case('!deltweet'): //e.g. !deltweet (id) //the id gets pasted into the twitch chat so you can quickly delete any tweets that you dont like 
             if(`${tags.mod}`){
                 delTweet(channel, tags, post);
             }else{
                 client.say(channel, 'You do not have permission to delete tweets!');
             }
             break;
-        case ('!dellasttweet'):
+        case ('!dellasttweet'): //e.g. !dellasttweet //this will delete the most recent one. 
             if(`${tags.mod}`){
                 delLastTweet(channel, tags);
             }else{
                 client.say(channel, 'You do not have permission to delete tweets!');
             }
             break;
-        case ('!clear'):
+        case ('!clear'): //basically is just the /clear command but with !clear, this is just to show how easy it is to create commands. (this isnt needed if you have nightbot installed)
             if(`${tags.mod}`){
                 client.clear(channel);
             }else{
                 client.say(channel, 'You do not have permission to clear chat!');
             }
             break;
-        default:
+        default: 
             if(command.charAt(0) === '!'){
                 client.say(channel, `${tags.username} the command you input not exist!`);
             }else{
