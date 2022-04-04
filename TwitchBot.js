@@ -22,20 +22,22 @@ const client = new tmi.Client({
 
 client.connect();
 
-let commandName, id_str = '';
+let input, id_str = '';
 var post = '';
 client.on('message', (channel, tags, message, self) => {
     if(blackList(channel, tags, message.toLowerCase()) || self){
         return;
     }
     //finds the command
-    commandName = message.split(' ');
-    let command = commandName[0];
+    input = message.split(' ');
+    //sets the frist word as input e.g !tweet
+    let command = input[0];
     
-    for(var i = 1; i < commandName.length; i++){
-        post += commandName[i] + ' ';
+    for(var i = 1; i < input.length; i++){
+        //sets everything after the first word as what to post (the variable post is used in multiple methods so be careful if you change the name)
+        post += input[i] + ' ';
     }
-    console.log(post);
+    //console.log(post);
     switch (command.toLowerCase()){
         case ('!tweet'):
             tweet(channel, tags, post);
