@@ -14,6 +14,7 @@ Set up twitter 3 legged oauth: https://auth0.com/blog/how-to-add-a-twitter-socia
 I recommend the video on this blog post.
 
 Twitter keys: https://www.youtube.com/watch?v=PqqXjwoDQiY
+
 twitch bot account oauth: https://twitchapps.com/tmi/
 
 all of these worked for me and are great resources, but it is up to you...
