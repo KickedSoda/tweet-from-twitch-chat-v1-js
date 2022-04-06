@@ -1,5 +1,5 @@
 # tweet from twitch chat Javascript
-Source code to a twitch/twitter bot
+Source code to a twitch/twitter bot that I made.
 
 make sure to have node.js installed on Visual Studio Code
 in the js terminal run, 'npm i twit.js' and 'npm i tmi.js' this installs the packages. When running the program, execute 'node TwitchBot.js'
